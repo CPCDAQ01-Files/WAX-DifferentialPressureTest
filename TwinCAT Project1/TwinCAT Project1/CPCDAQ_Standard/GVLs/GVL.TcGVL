@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL" Id="{314def32-ef72-4378-a8ec-df549f30b072}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+
+(*Digital Input Variables for EL1809 Card*)
+bDigital_Input1 AT %I* : BOOL; 
+bDigital_Input2 AT %I* : BOOL; 
+bDigital_Input3 AT %I* : BOOL; 
+bDigital_Input4 AT %I* : BOOL; 
+bDigital_Input5 AT %I* : BOOL; 
+bDigital_Input6 AT %I* : BOOL; 
+bDigital_Input7 AT %I* : BOOL; 
+bDigital_Input8 AT %I* : BOOL; 
+bDigital_Input9 AT %I* : BOOL; 
+bDigital_Input10 AT %I* : BOOL; 
+bDigital_Input11 AT %I* : BOOL; 
+bDigital_Input12 AT %I* : BOOL; 
+bDigital_Input13 AT %I* : BOOL; 
+bDigital_Input14 AT %I* : BOOL; 
+bDigital_Input15 AT %I* : BOOL; 
+bDigital_Input16 AT %I* : BOOL; 
+
+
+(*4-20mA Analog Input Variables for EL3114 Card*)
+nCurrent_Input1 AT %I* : INT; 
+nCurrent_Input2 AT %I* : INT; 
+nCurrent_Input3 AT %I* : INT; 
+nCurrent_Input4 AT %I* : INT; 
+nCurrent_Input1_EU AT %I* : REAL; 
+nCurrent_Input2_EU AT %I* : REAL; 
+nCurrent_Input3_EU AT %I* : REAL; 
+nCurrent_Input4_EU AT %I* : REAL; 
+
+(*0-10V Analog Input Variables for EL3104 Card*)
+nVoltage_Input1 AT %I* : INT; 
+nVoltage_Input2 AT %I* : INT; 
+nVoltage_Input3 AT %I* : INT; 
+nVoltage_Input4 AT %I* : INT; 
+nVoltage_Input1_EU AT %I* : REAL; 
+nVoltage_Input2_EU AT %I* : REAL; 
+nVoltage_Input3_EU AT %I* : REAL; 
+nVoltage_Input4_EU AT %I* : REAL; 
+
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<TcLicenseInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2011/11/TcLicenseInfo">
+	<LicenseInfo>
+		<SystemId>{D9B62186-335F-B581-E829-27E72FE431EF}</SystemId>
+		<IssueTime>2024-08-23T22:12:00</IssueTime>
+		<ExpireTime>2024-08-31T00:00:00</ExpireTime>
+		<LicenseKey>4197a3f1f340553fb830a4dc988cbfceedd482d061cbf27f49eef1dd69213338169ca49e7e34ea5bb8f3d13f6aade0f6497fd8f8a1204d771f31307c332e8ce868f93cd4116429f614631be56c7c22cedbcd549e53d5c7ce35513fbf322f3d5c4ba9f5e99b78a13d91d5287a6acac27ec2a038c6c56acebde61c5bf72182a78ba685e5a1115b756e8a7c108541a6e320019aab1b696201f1195ff6bfee41e7f29b1095094c957532f648794d0f99f8bfe2036d64e4e1305de43c87d2fefd98b2662c8d6923382ab4878a4bc2b128d9f239693038fc6dfd12371d98e038903fc345564e3843522e7dcb1e6c829561bee3f828bf4e8e9f924b4ac8019cc6cc5d66</LicenseKey>
+		<License>
+			<LicenseId>{4C256767-E6E6-4AF5-BD68-9F7ABAD0C200}</LicenseId>
+			<Name>TC3 ADS</Name>
+			<OrderNo>TC1000</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{3FF18E97-7754-401B-93FB-70544DE28A13}</LicenseId>
+			<Name>TC3 IO</Name>
+			<OrderNo>TC1100</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{66689887-CCBD-452C-AC9A-039D997C6E66}</LicenseId>
+			<Name>TC3 PLC</Name>
+			<OrderNo>TC1200</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{4989A799-AEEA-4FEE-88EF-666B99EEFB45}</LicenseId>
+			<Name>TC3 Scope View Professional</Name>
+			<OrderNo>TE1300</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{3DDCAB25-BF0E-412C-A721-DC77C1B8099C}</LicenseId>
+			<Name>TC3 Scope Server</Name>
+			<OrderNo>TF3300</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{BB40055B-8333-4223-90EA-7C4559DC7C69}</LicenseId>
+			<Name>TC3 Analytics Workbench</Name>
+			<OrderNo>TE3500</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{88FA6DAB-09EF-464E-A413-EE4B97F3F185}</LicenseId>
+			<Name>TC3 Analytics Service Tool</Name>
+			<OrderNo>TE3520</OrderNo>
+		</License>
+	</LicenseInfo>
+</TcLicenseInfo>
