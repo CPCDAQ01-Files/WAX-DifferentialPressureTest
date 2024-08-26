@@ -38,6 +38,8 @@ VAR
 	rTransducerVoltage : REAL; //Made local scope of object for accessibility later
 END_VAR
 
+//check whether SC works
+
 (*
 Descriptions of what each line does in the execution plane
 
