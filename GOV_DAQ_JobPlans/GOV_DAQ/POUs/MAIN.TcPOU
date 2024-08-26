@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
-  <POU Name="MAIN" Id="{b45f44f8-b7f4-49fc-b40d-1c4181623575}" SpecialFunc="None">
+  <POU Name="MAIN" Id="{df98a920-9144-46ba-8bac-80a878f0c15f}" SpecialFunc="None">
     <Declaration><![CDATA[(*
-GOV Differential Pressure Testing
-Document reference: Ux Governor Differential Pressure Testing
-Purpose: (1) Takes 4-20mA as an input and scales to output a %Position assuming a linear relationship
+Purpose: (1) Takes 4-20mA as an input AND scales TO output a %Position assuming a linear relationship
 		 (2) 
 
 Inputs: (1) Servo-motor position indicator 4-20mA innput to EL3114
@@ -24,33 +22,18 @@ Notes:
 *)
 
 PROGRAM MAIN
-VAR
-	pressureTransOne : PressureTransducer_3000PSIG;									   
-	pressureTransTwo : PressureTransducer_3000PSIG;
-	wicketGateServo : ServoPosition_SetPoint;
-	
-	rOutputPressure01 : REAL;
-	rOutputPressure02 : REAL;
-	rOutoutPercentPosition : REAL;
+VAR CONSTANT
+	startVal_mA : REAL := 6350;
+	rDAQtomA : REAL := (20 - 4)/(32768.0 - startVal_mA);
 END_VAR
 
+
+VAR
+	
+END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[//Calibration step - currently left to default stage
-pressureTransOne(nDAQ_inputVoltage:=GVL.nVoltage_Input1, rStartValInput_EU:=0, nStartValInput:=0);
-pressureTransOne(nDAQ_inputVoltage:=GVL.nVoltage_Input2, rStartValInput_EU:=0, nStartValInput:=0);
-wicketGateServo(rStartValInput_EU := 0, nStartValInput := 0);
-
-rOutputPressure01 := pressureTransOne.PressureReading();
-rOutputPressure02 := pressureTransTwo.PressureReading();
-rOutoutPercentPosition := wicketGateServo.PercentPosition();]]></ST>
+      <ST><![CDATA[]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="50" Count="0" />
-      <LineId Id="47" Count="2" />
-      <LineId Id="56" Count="0" />
-      <LineId Id="55" Count="0" />
-      <LineId Id="57" Count="1" />
-    </LineIds>
   </POU>
 </TcPlcObject>
