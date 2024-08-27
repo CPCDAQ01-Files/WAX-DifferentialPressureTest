@@ -23,17 +23,29 @@ Notes:
 
 PROGRAM MAIN
 VAR CONSTANT
-	startVal_mA : REAL := 6350;
-	rDAQtomA : REAL := (20 - 4)/(32768.0 - startVal_mA);
+	//User defined
+	startVal_mA : UINT := 6530;
+	startVal_volt : UINT := 0;
+	startVal_mA_EU : REAL := 3.95;
+	startVal_volt_EU : UINT := 0;
+	
+	rDAQTomA : REAL := (20 - 4)/(32768.0 - startVal_mA);
+	rDAQtoVoltage : REAL := 10/(32768.0 - startVal_volt);
+	rVoltageToPressure : REAL := 300.0; //PSIG per Volt
+	rmAToPercentPos : REAL := 100.0/(20 - startVal_mA_EU);
 END_VAR
 
-
 VAR
-	
+	pressureTransOne_pressure : REAL;
+	pressureTransTwo_pressure : REAL;
+	percentPos : REAL;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[//GOV feedback %Position
+percentPos := (((GVL.nCurrent_Input1 - startVal_mA) * rDAQTomA) - startVal_mA_EU) * rmAToPercentPos;
+
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
