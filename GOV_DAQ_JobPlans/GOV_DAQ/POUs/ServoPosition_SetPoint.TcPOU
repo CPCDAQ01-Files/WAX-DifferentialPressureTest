@@ -1068,8 +1068,8 @@ END_VAR
                             </o>
                             <o>
                               <o n="Operand" t="Operand">
-                                <v n="Operand">"rStartVal_EU"</v>
-                                <v n="Type">"REAL"</v>
+                                <v n="Operand">"16.0"</v>
+                                <v n="Type">"LREAL"</v>
                                 <v n="Comment">""</v>
                                 <v n="SymbolComment">""</v>
                                 <v n="Address">""</v>
@@ -1258,7 +1258,7 @@ END_VAR
                           <l2 n="OutputItems" cet="Operand">
                             <o>
                               <v n="Operand">"PercentPosition"</v>
-                              <v n="Type">"BOOL"</v>
+                              <v n="Type">"REAL"</v>
                               <v n="Comment">""</v>
                               <v n="SymbolComment">""</v>
                               <v n="Address">""</v>
@@ -1517,7 +1517,7 @@ END_VAR
                               <o>
                                 <o n="Operand" t="Operand">
                                   <v n="Operand">"PercentPosition"</v>
-                                  <v n="Type">"BOOL"</v>
+                                  <v n="Type">"REAL"</v>
                                   <v n="Comment">""</v>
                                   <v n="SymbolComment">""</v>
                                   <v n="Address">""</v>

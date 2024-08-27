@@ -5,10 +5,12 @@
 GOV Differential Pressure Testing
 Document reference: Ux Governor Differential Pressure Testing
 Purpose: (1) Takes 4-20mA as an input and scales to output a %Position assuming a linear relationship
-		 (2) 
+		 (2) Converts 0-10V signal from two 3000 PSIG pressure transducers and reports it's pressure
+		 
+		 => Purpose of Test: Timing test to see how long it takes for WG to open & close.
 
 Inputs: (1) Servo-motor position indicator 4-20mA innput to EL3114
-		(2) .... (0-10 V) input to EL3104
+		(2) Two 0-10 V inputs to EL3104
 
 Outputs: No physical outputs. DAQ acquires data, processes it, and displays it as scope data. 
 		 Users can may optionally use analytics tooling available in TwinCAT 3. Otherwise, data
@@ -16,7 +18,7 @@ Outputs: No physical outputs. DAQ acquires data, processes it, and displays it a
 		 MATLAB.
 
 Notes:
-(1) There is some fixed error in the calculation - 100% is never reach, but we get close ~99.9%!
+(1) There is some fixed error in the calculation - 100% is may never be reached, but we get close ~99.9%!
 (2) There are overcurrent protections (fuses) but no external overvoltage protections. Please double check
 	the EL3104 will not be damaged with max input voltage of proccess variable being measured (card 
 	can handle max. 10V)
@@ -36,21 +38,14 @@ END_VAR
 
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[//Calibration step - currently left to default stage
+      <ST><![CDATA[//Init & Calibration step - currently left to default values (See FB definition for more details)
 pressureTransOne(nDAQ_inputVoltage:=GVL.nVoltage_Input1, rStartValInput_EU:=0, nStartValInput:=0);
-pressureTransOne(nDAQ_inputVoltage:=GVL.nVoltage_Input2, rStartValInput_EU:=0, nStartValInput:=0);
+pressureTransTwo(nDAQ_inputVoltage:=GVL.nVoltage_Input2, rStartValInput_EU:=0, nStartValInput:=0);
 wicketGateServo(rStartValInput_EU := 0, nStartValInput := 0);
 
 rOutputPressure01 := pressureTransOne.PressureReading();
 rOutputPressure02 := pressureTransTwo.PressureReading();
 rOutoutPercentPosition := wicketGateServo.PercentPosition();]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="50" Count="0" />
-      <LineId Id="47" Count="2" />
-      <LineId Id="56" Count="0" />
-      <LineId Id="55" Count="0" />
-      <LineId Id="57" Count="1" />
-    </LineIds>
   </POU>
 </TcPlcObject>
