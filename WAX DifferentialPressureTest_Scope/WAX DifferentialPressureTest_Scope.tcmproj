@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{bec70f59-4b75-4f7f-9e02-cbf28620bd84}</ProjectGuid>
+    <AssemblyName>WAX DifferentialPressureTest_Scope</AssemblyName>
+    <Name>WAX DifferentialPressureTest_Scope</Name>
+    <RootNamespace>WAX DifferentialPressureTest_Scope</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="YT Scope Project.tcscopex">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

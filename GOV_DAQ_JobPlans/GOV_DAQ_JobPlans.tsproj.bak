@@ -771,6 +771,10 @@ Bit1: Value smaller than Limit2]]></Comment>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL3114)">
 				<Link VarA="PlcTask Inputs^GVL.nCurrent_Input1" VarB="AI Standard Channel 1^Value"/>
 			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3104)">
+				<Link VarA="PlcTask Inputs^GVL.nVoltage_Input1" VarB="AI Standard Channel 1^Value"/>
+				<Link VarA="PlcTask Inputs^GVL.nVoltage_Input2" VarB="AI Standard Channel 2^Value"/>
+			</OwnerB>
 		</OwnerA>
 	</Mappings>
 </TcSmProject>
