@@ -22,7 +22,8 @@ Notes:
 	
 (3) This is the ST version of the codebase. The most straightforward, but hard to read, implementation. 
 	Should be used when the FB solution using function block diagrams is not working and a quick fix is
-	needed. This project is missing a scope project, which will need to be added when PLC is online.
+	needed. This project is missing a scope project, which will need to be added when PLC is online (if
+	needed).
 *)
 
 PROGRAM MAIN
