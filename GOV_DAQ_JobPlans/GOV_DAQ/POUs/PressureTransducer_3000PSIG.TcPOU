@@ -8,7 +8,10 @@ Description: Models the transducers used for wicket gate differential
 			 Transducer pressure vs. voltage characteristic curve was tested and
 			 found to be linear. See tranducer nameplate for detailed specs. 
 
-METHODS: 	(1) PressureReading : REAL => Takes voltage reading and converts to pressure (PSIG.
+METHODS: 	(1) PressureReading : REAL => Takes voltage reading and converts to pressure (PSIG)
+
+Inputs:     (1) rStartValInput_EU : REAL => User defined startValue_EU, set to zero to use default value of 0V (TEST PLZ LK)
+		    (2) nStartValInput : INT => User defined startValue, set to zero to use default value of 20 (unitless)
 
 Note: 		(1) Any method returning a value of -1 means an error occured
 
@@ -22,7 +25,7 @@ FUNCTION_BLOCK PressureTransducer_3000PSIG
 VAR CONSTANT
 	nMaxRatedPressure : UINT := 3000;// PSIG
 	nMaxVoltage : UINT := 10; // Volts
-	nDefaultDAQ_startVal : INT := 6540;
+	nDefaultDAQ_startVal : INT := 20;
 	rDefaultEU_startVal : REAL := 0.0; //Volts
 END_VAR
 
@@ -37,8 +40,6 @@ VAR
 	nStartVal : INT; //El3104 DAQ resolution, 16 bit (1 bit = sign bit)
 	rTransducerVoltage : REAL; //Made local scope of object for accessibility later
 END_VAR
-
-//check whether SC works
 
 (*
 Descriptions of what each line does in the execution plane
@@ -155,7 +156,7 @@ Descriptions of what each line does in the execution plane
                               <n n="InputFlags" />
                               <l2 n="InputItems" cet="BoxTreeBox">
                                 <o>
-                                  <v n="BoxType">"GE"</v>
+                                  <v n="BoxType">"GT"</v>
                                   <o n="Instance" t="Operand">
                                     <n n="Operand" />
                                     <v n="Type">""</v>
@@ -170,7 +171,7 @@ Descriptions of what each line does in the execution plane
                                     <v n="LValue">false</v>
                                     <v n="Boolean">false</v>
                                     <v n="IsInstance">true</v>
-                                    <v n="Id">578L</v>
+                                    <v n="Id">666L</v>
                                   </o>
                                   <o n="OutputItems" t="OutputItemList">
                                     <l2 n="OutputItems">
@@ -218,9 +219,9 @@ Descriptions of what each line does in the execution plane
                                         <v n="LValue">false</v>
                                         <v n="Boolean">false</v>
                                         <v n="IsInstance">false</v>
-                                        <v n="Id">583L</v>
+                                        <v n="Id">669L</v>
                                       </o>
-                                      <v n="Id">582L</v>
+                                      <v n="Id">668L</v>
                                     </o>
                                   </l2>
                                   <o n="InputParam" t="ParamList">
@@ -235,13 +236,13 @@ Descriptions of what each line does in the execution plane
                                       <v>BOOL</v>
                                     </l2>
                                   </o>
-                                  <v n="CallType" t="Operator">Ge</v>
+                                  <v n="CallType" t="Operator">Gt</v>
                                   <v n="EN">false</v>
                                   <v n="ENO">false</v>
                                   <n n="STSnippet" />
                                   <v n="ContainsExtensibleInputs">false</v>
                                   <v n="ProvidesSTSnippet">false</v>
-                                  <v n="Id">579L</v>
+                                  <v n="Id">667L</v>
                                 </o>
                               </l2>
                               <o n="InputParam" t="ParamList">
@@ -346,7 +347,7 @@ Descriptions of what each line does in the execution plane
                           <o n="TextDocument" t="TextDocument">
                             <a n="TextLines" cet="TextLine">
                               <o>
-                                <v n="Id">613L</v>
+                                <v n="Id">670L</v>
                                 <n n="Tag" />
                                 <v n="Text">"rStartVal_EU := rDefaultEU_startVal;"</v>
                               </o>
@@ -469,7 +470,7 @@ Descriptions of what each line does in the execution plane
                               <n n="InputFlags" />
                               <l2 n="InputItems" cet="BoxTreeBox">
                                 <o>
-                                  <v n="BoxType">"GE"</v>
+                                  <v n="BoxType">"GT"</v>
                                   <o n="Instance" t="Operand">
                                     <n n="Operand" />
                                     <v n="Type">""</v>
@@ -484,7 +485,7 @@ Descriptions of what each line does in the execution plane
                                     <v n="LValue">false</v>
                                     <v n="Boolean">false</v>
                                     <v n="IsInstance">true</v>
-                                    <v n="Id">596L</v>
+                                    <v n="Id">672L</v>
                                   </o>
                                   <o n="OutputItems" t="OutputItemList">
                                     <l2 n="OutputItems">
@@ -532,9 +533,9 @@ Descriptions of what each line does in the execution plane
                                         <v n="LValue">false</v>
                                         <v n="Boolean">false</v>
                                         <v n="IsInstance">false</v>
-                                        <v n="Id">601L</v>
+                                        <v n="Id">675L</v>
                                       </o>
-                                      <v n="Id">600L</v>
+                                      <v n="Id">674L</v>
                                     </o>
                                   </l2>
                                   <o n="InputParam" t="ParamList">
@@ -549,13 +550,13 @@ Descriptions of what each line does in the execution plane
                                       <v>BOOL</v>
                                     </l2>
                                   </o>
-                                  <v n="CallType" t="Operator">Ge</v>
+                                  <v n="CallType" t="Operator">Gt</v>
                                   <v n="EN">false</v>
                                   <v n="ENO">false</v>
                                   <n n="STSnippet" />
                                   <v n="ContainsExtensibleInputs">false</v>
                                   <v n="ProvidesSTSnippet">false</v>
-                                  <v n="Id">597L</v>
+                                  <v n="Id">673L</v>
                                 </o>
                               </l2>
                               <o n="InputParam" t="ParamList">
@@ -660,7 +661,7 @@ Descriptions of what each line does in the execution plane
                           <o n="TextDocument" t="TextDocument">
                             <a n="TextLines" cet="TextLine">
                               <o>
-                                <v n="Id">607L</v>
+                                <v n="Id">676L</v>
                                 <n n="Tag" />
                                 <v n="Text">"nStartVal := nDefaultDAQ_startVal;"</v>
                               </o>
@@ -717,10 +718,7 @@ Purpose: Converts the voltage signal from the pressure transducer into a pressur
 
 NOTE: The El3104 can only tolerate +/- 10V and a max input current of 40mA.
 
-Inputs:     (1) rStartValInput_EU : REAL => User defined startValue_EU, set to zero to use default value of 0V (TEST PLZ LK)
-		    (2) nStartValInput : INT => User defined startValue, set to zero to use default value of 6540 (unitless)
-
-GVL usage:  (1) nVoltage_Input1 : INT => RAW current signed 16 bit voltage data from DAQ in terminal slot I1
+GVL usage:  (1) nVoltage_Input1 : INT => RAW signed 16 bit voltage data from DAQ in terminal slot I1
 		    (2) rVoltage_Input1_EU : REAL => Converted DAQ reading to voltage
 
 Author: Labib K. 
@@ -734,14 +732,12 @@ VAR
 	rVoltToPSIG : REAL; //Conversion factor from volts to PSIG
 END_VAR
 
-//Comment to check whether SC is working
-
 (*
 Descriptions of what each line does in the execution plane
 
 1 => Calculates Conversion factor DAQ resolution to V
 2 => Multiplies raw DAQ resolution (unit less) -> Engineering unit(V) using linear interpolation
-3 => Scales the Engineering Unit to a %Postion (4 mA = 0%)
+3 => Scales the Engineering Unit to a Pressure (PSIG)
 4 => Reports the non-negative % Position, zero otherwise
 *)
 ]]></Declaration>

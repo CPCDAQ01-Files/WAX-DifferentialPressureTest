@@ -1,7 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
   <POU Name="ServoPosition_SetPoint" Id="{b8b83adc-b271-4dd1-a911-513782680edf}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK ServoPosition_SetPoint
+    <Declaration><![CDATA[(*
+Description: Models the Wicket gate %Position feedback variable. This FB converts the current
+			 signal into a % using linear interpolation.
+
+Inputs:     (1) rStartValInput_EU : REAL => User defined startValue_EU, set to zero to use default value of 3.95 mA 
+		    (2) nStartValInput : INT => User defined startValue, set to zero to use default value of 6540 (unitless)
+
+METHODS: 	(1) PressureReading : REAL => Takes voltage reading and con
+
+Note: 		(1) Any method returning a value of -1 means an error occured
+
+Author: Labib K. 
+Engineering Co-op Student (2024)
+August 9th, 2024
+*)
+
+FUNCTION_BLOCK ServoPosition_SetPoint
 
 VAR CONSTANT
 	nDefaultDAQ_startVal : INT := 6540;
@@ -17,7 +33,13 @@ VAR
 	rStartVal_EU : REAL;
 	nStartVal : INT; //El3114 DAQ resolution, 16 bit (1 bit = sign bit)
 END_VAR
-]]></Declaration>
+
+(*
+Descriptions of what each line does in the execution plane
+
+1 => IF NOT zero, rStartVal_EU = User defined, ELSE takes default value OF 0 V
+2 => If not zero, rStartVal = User defined, else takes default value of 6540
+*)]]></Declaration>
     <Implementation>
       <NWL>
         <XmlArchive>
@@ -127,7 +149,7 @@ END_VAR
                               <n n="InputFlags" />
                               <l2 n="InputItems" cet="BoxTreeBox">
                                 <o>
-                                  <v n="BoxType">"GE"</v>
+                                  <v n="BoxType">"GT"</v>
                                   <o n="Instance" t="Operand">
                                     <n n="Operand" />
                                     <v n="Type">""</v>
@@ -142,7 +164,7 @@ END_VAR
                                     <v n="LValue">false</v>
                                     <v n="Boolean">false</v>
                                     <v n="IsInstance">true</v>
-                                    <v n="Id">314L</v>
+                                    <v n="Id">400L</v>
                                   </o>
                                   <o n="OutputItems" t="OutputItemList">
                                     <l2 n="OutputItems">
@@ -190,9 +212,9 @@ END_VAR
                                         <v n="LValue">false</v>
                                         <v n="Boolean">false</v>
                                         <v n="IsInstance">false</v>
-                                        <v n="Id">319L</v>
+                                        <v n="Id">403L</v>
                                       </o>
-                                      <v n="Id">318L</v>
+                                      <v n="Id">402L</v>
                                     </o>
                                   </l2>
                                   <o n="InputParam" t="ParamList">
@@ -207,13 +229,13 @@ END_VAR
                                       <v>BOOL</v>
                                     </l2>
                                   </o>
-                                  <v n="CallType" t="Operator">Ge</v>
+                                  <v n="CallType" t="Operator">Gt</v>
                                   <v n="EN">false</v>
                                   <v n="ENO">false</v>
                                   <n n="STSnippet" />
                                   <v n="ContainsExtensibleInputs">false</v>
                                   <v n="ProvidesSTSnippet">false</v>
-                                  <v n="Id">315L</v>
+                                  <v n="Id">401L</v>
                                 </o>
                               </l2>
                               <o n="InputParam" t="ParamList">
@@ -318,7 +340,7 @@ END_VAR
                           <o n="TextDocument" t="TextDocument">
                             <a n="TextLines" cet="TextLine">
                               <o>
-                                <v n="Id">343L</v>
+                                <v n="Id">404L</v>
                                 <n n="Tag" />
                                 <v n="Text">"rStartVal_EU := rDefaultEU_startVal;"</v>
                               </o>
@@ -441,7 +463,7 @@ END_VAR
                               <n n="InputFlags" />
                               <l2 n="InputItems" cet="BoxTreeBox">
                                 <o>
-                                  <v n="BoxType">"GE"</v>
+                                  <v n="BoxType">"GT"</v>
                                   <o n="Instance" t="Operand">
                                     <n n="Operand" />
                                     <v n="Type">""</v>
@@ -456,7 +478,7 @@ END_VAR
                                     <v n="LValue">false</v>
                                     <v n="Boolean">false</v>
                                     <v n="IsInstance">true</v>
-                                    <v n="Id">332L</v>
+                                    <v n="Id">406L</v>
                                   </o>
                                   <o n="OutputItems" t="OutputItemList">
                                     <l2 n="OutputItems">
@@ -504,9 +526,9 @@ END_VAR
                                         <v n="LValue">false</v>
                                         <v n="Boolean">false</v>
                                         <v n="IsInstance">false</v>
-                                        <v n="Id">337L</v>
+                                        <v n="Id">409L</v>
                                       </o>
-                                      <v n="Id">336L</v>
+                                      <v n="Id">408L</v>
                                     </o>
                                   </l2>
                                   <o n="InputParam" t="ParamList">
@@ -521,13 +543,13 @@ END_VAR
                                       <v>BOOL</v>
                                     </l2>
                                   </o>
-                                  <v n="CallType" t="Operator">Ge</v>
+                                  <v n="CallType" t="Operator">Gt</v>
                                   <v n="EN">false</v>
                                   <v n="ENO">false</v>
                                   <n n="STSnippet" />
                                   <v n="ContainsExtensibleInputs">false</v>
                                   <v n="ProvidesSTSnippet">false</v>
-                                  <v n="Id">333L</v>
+                                  <v n="Id">407L</v>
                                 </o>
                               </l2>
                               <o n="InputParam" t="ParamList">
@@ -632,7 +654,7 @@ END_VAR
                           <o n="TextDocument" t="TextDocument">
                             <a n="TextLines" cet="TextLine">
                               <o>
-                                <v n="Id">349L</v>
+                                <v n="Id">410L</v>
                                 <n n="Tag" />
                                 <v n="Text">"nStartVal := nDefaultDAQ_startVal;"</v>
                               </o>
@@ -701,7 +723,15 @@ VAR
 	rDAQtomA_ConvFac : REAL; //DAQ signed 16 bit number to EU (mA)
 	rmAToPercent : REAL; //Conversion factor from mA to %
 END_VAR
-]]></Declaration>
+
+(*
+Descriptions of what each line does in the execution plane
+
+1 => Calculates Conversion factor DAQ resolution to mA
+2 => Multiplies raw DAQ resolution (unit less) -> Engineering unit(V) using linear interpolation
+3 => Scales the Engineering Unit to a %Postion (4 mA = 0%)
+4 => Reports the non-negative % Position, zero otherwise
+*)]]></Declaration>
       <Implementation>
         <NWL>
           <XmlArchive>

@@ -38,11 +38,12 @@ END_VAR
 
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[//Init & Calibration step - currently left to default values (See FB definition for more details)
+      <ST><![CDATA[//Init & Calibration step - currently left to default values (See FB definitions for more details)
 pressureTransOne(nDAQ_inputVoltage:=GVL.nVoltage_Input1, rStartValInput_EU:=0, nStartValInput:=0);
 pressureTransTwo(nDAQ_inputVoltage:=GVL.nVoltage_Input2, rStartValInput_EU:=0, nStartValInput:=0);
 wicketGateServo(rStartValInput_EU := 0, nStartValInput := 0);
 
+//Assign variables to FB read out values
 rOutputPressure01 := pressureTransOne.PressureReading();
 rOutputPressure02 := pressureTransTwo.PressureReading();
 rOutoutPercentPosition := wicketGateServo.PercentPosition();]]></ST>
