@@ -256,6 +256,9 @@ paket-files/
 # CodeRush
 .cr/
 
+# Ignore TwinCat3 user file updates
+*.~u
+
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
