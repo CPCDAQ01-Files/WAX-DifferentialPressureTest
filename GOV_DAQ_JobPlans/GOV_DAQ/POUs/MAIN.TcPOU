@@ -22,7 +22,7 @@ Notes:
 	
 (3) This is the ST version of the codebase. The most straightforward, but hard to read, implementation. 
 	Should be used when the FB solution using function block diagrams is not working and a quick fix is
-	needed.
+	needed. This project is missing a scope project, which will need to be added when PLC is online.
 *)
 
 PROGRAM MAIN
@@ -50,6 +50,7 @@ END_VAR
 percentPos := (((GVL.nCurrent_Input1 - startVal_mA) * rDAQTomA) - startVal_mA_EU) * rmAToPercentPos;
 pressureTransOne_pressure := (((GVL.nVoltage_Input1 - startVal_volt_EU) * rDAQtoVoltage) - startVal_volt_EU) * rVoltageToPressure;
 pressureTransOne_pressure := (((GVL.nVoltage_Input2 - startVal_volt_EU) * rDAQtoVoltage) - startVal_volt_EU) * rVoltageToPressure;
+
 ]]></ST>
     </Implementation>
   </POU>
