@@ -1,0 +1,4 @@
+# Analytic Scope
+Meant to be an option to try the more advanced measurement tooling available with the analytics extension. Haven't implemented it yet, so it's a copy of master (to when it was first initialized). 
+
+A feature that could be worthwhile to add is trigger flags that would graphically show when %position reaches 100% or when the pressure transducers get to 1100 PSIG.
