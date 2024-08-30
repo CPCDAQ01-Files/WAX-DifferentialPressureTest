@@ -44,7 +44,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{E71E7BE0-4C4C-4C1C-9710-407923B476C0}" Name="GOV_DAQ" PrjFilePath="GOV_DAQ\GOV_DAQ.plcproj" TmcFilePath="GOV_DAQ\GOV_DAQ.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="GOV_DAQ\GOV_DAQ.tmc" TmcHash="{5EB4B5EF-14E7-84D7-644A-CDACFD67781C}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="GOV_DAQ\GOV_DAQ.tmc" TmcHash="{0593499B-05A2-A98C-9BD0-E3C666342A11}">
 					<Name>GOV_DAQ Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">

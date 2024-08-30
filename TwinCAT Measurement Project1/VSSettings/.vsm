@@ -113,8 +113,8 @@
           </Children>
         </Node>
         <Node>
-          <Title>WG Timing Test</Title>
-          <Expanded>False</Expanded>
+          <Title>Network</Title>
+          <Expanded>True</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
@@ -132,7 +132,7 @@
             </Node>
             <Node>
               <Title>Opening Pressure</Title>
-              <Expanded>False</Expanded>
+              <Expanded>True</Expanded>
               <FileName></FileName>
               <Children>
                 <Node>
@@ -145,7 +145,7 @@
             </Node>
             <Node>
               <Title>Closing Pressure</Title>
-              <Expanded>False</Expanded>
+              <Expanded>True</Expanded>
               <FileName></FileName>
               <Children>
                 <Node>
@@ -165,12 +165,12 @@
           <Children>
             <Node>
               <Title>Last Event @ Edge Counter 1Ch</Title>
-              <Expanded>True</Expanded>
+              <Expanded>False</Expanded>
               <FileName></FileName>
               <Children>
                 <Node>
                   <Title>Channel Trigger Set</Title>
-                  <Expanded>True</Expanded>
+                  <Expanded>False</Expanded>
                   <FileName></FileName>
                   <Children>
                     <Node>
