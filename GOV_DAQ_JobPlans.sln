@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.33403.129
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "GOV_DAQ_JobPlans", "GOV_DAQ_JobPlans\GOV_DAQ_JobPlans.tsproj", "{88B123CE-F622-474E-934F-27A718E6EF79}"
 EndProject
+Project("{FD9F1D59-E000-42F3-8744-88DE1BE93C06}") = "TwinCAT Measurement Project1", "TwinCAT Measurement Project1\TwinCAT Measurement Project1.tcmproj", "{03A7D136-4B11-434C-9DBD-9B37E6EC270E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|TwinCAT CE7 (ARMV7) = Debug|TwinCAT CE7 (ARMV7)
@@ -55,6 +57,16 @@ Global
 		{E71E7BE0-4C4C-4C1C-9710-407923B476C0}.Release|TwinCAT RT (x64).Build.0 = Release|TwinCAT RT (x64)
 		{E71E7BE0-4C4C-4C1C-9710-407923B476C0}.Release|TwinCAT RT (x86).ActiveCfg = Release|TwinCAT RT (x86)
 		{E71E7BE0-4C4C-4C1C-9710-407923B476C0}.Release|TwinCAT RT (x86).Build.0 = Release|TwinCAT RT (x86)
+		{03A7D136-4B11-434C-9DBD-9B37E6EC270E}.Debug|TwinCAT CE7 (ARMV7).ActiveCfg = Debug|TwinCAT CE7 (ARMV7)
+		{03A7D136-4B11-434C-9DBD-9B37E6EC270E}.Debug|TwinCAT OS (ARMT2).ActiveCfg = Debug|TwinCAT OS (ARMT2)
+		{03A7D136-4B11-434C-9DBD-9B37E6EC270E}.Debug|TwinCAT OS (x64).ActiveCfg = Debug|TwinCAT OS (x64)
+		{03A7D136-4B11-434C-9DBD-9B37E6EC270E}.Debug|TwinCAT RT (x64).ActiveCfg = Debug|TwinCAT RT (x64)
+		{03A7D136-4B11-434C-9DBD-9B37E6EC270E}.Debug|TwinCAT RT (x86).ActiveCfg = Debug|TwinCAT RT (x86)
+		{03A7D136-4B11-434C-9DBD-9B37E6EC270E}.Release|TwinCAT CE7 (ARMV7).ActiveCfg = Release|TwinCAT CE7 (ARMV7)
+		{03A7D136-4B11-434C-9DBD-9B37E6EC270E}.Release|TwinCAT OS (ARMT2).ActiveCfg = Release|TwinCAT OS (ARMT2)
+		{03A7D136-4B11-434C-9DBD-9B37E6EC270E}.Release|TwinCAT OS (x64).ActiveCfg = Release|TwinCAT OS (x64)
+		{03A7D136-4B11-434C-9DBD-9B37E6EC270E}.Release|TwinCAT RT (x64).ActiveCfg = Release|TwinCAT RT (x64)
+		{03A7D136-4B11-434C-9DBD-9B37E6EC270E}.Release|TwinCAT RT (x86).ActiveCfg = Release|TwinCAT RT (x86)
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
