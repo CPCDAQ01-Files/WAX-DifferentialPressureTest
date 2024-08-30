@@ -12,6 +12,12 @@ METHODS: 	(1) PressureReading : REAL => Takes voltage reading and converts to pr
 
 Inputs:     (1) rStartValInput_EU : REAL => User defined startValue_EU, set to zero to use default value of 0V (TEST PLZ LK)
 		    (2) nStartValInput : INT => User defined startValue, set to zero to use default value of 20 (unitless)
+			
+GVL usage:  (1) nVoltage_InputX : INT => RAW signed 16 bit voltage data from DAQ, linked to local variable
+				nDAQ_inputVoltage.
+				
+		    (2) rVoltage_InputX_EU : REAL => Converted DAQ reading to voltage. Not Used as functionaly is replaced with 
+				local variable.
 
 Note: 		(1) Any method returning a value of -1 means an error occured
 
@@ -717,9 +723,6 @@ Purpose: Converts the voltage signal from the pressure transducer into a pressur
 		 using linear interpolation
 
 NOTE: The El3104 can only tolerate +/- 10V and a max input current of 40mA.
-
-GVL usage:  (1) nVoltage_Input1 : INT => RAW signed 16 bit voltage data from DAQ in terminal slot I1
-		    (2) rVoltage_Input1_EU : REAL => Converted DAQ reading to voltage
 
 Author: Labib K. 
 Engineering Co-op Student (2024)

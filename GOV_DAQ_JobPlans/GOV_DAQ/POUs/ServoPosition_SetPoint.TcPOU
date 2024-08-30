@@ -8,9 +8,13 @@ Description: Models the Wicket gate %Position feedback variable. This FB convert
 Inputs:     (1) rStartValInput_EU : REAL => User defined startValue_EU, set to zero to use default value of 3.95 mA 
 		    (2) nStartValInput : INT => User defined startValue, set to zero to use default value of 6540 (unitless)
 
-METHODS: 	(1) PressureReading : REAL => Takes voltage reading and con
+METHODS: 	(1) PressureReading : REAL => Takes voltage reading and converts to %position
+
+GVL usage:  (1) nCurrent_Input1 : DAQ resolution on 
 
 Note: 		(1) Any method returning a value of -1 means an error occured
+			(2) **Only I1 can be used due to GVL variables hardcoded in**
+				-> This can be easily changed to resemble the pressure transducers
 
 Author: Labib K. 
 Engineering Co-op Student (2024)
@@ -675,19 +679,6 @@ Descriptions of what each line does in the execution plane
                   </l2>
                   <l2 n="Connectors" />
                   <v n="Id">322L</v>
-                </o>
-                <o>
-                  <v n="ILActive">false</v>
-                  <v n="FBDValid">false</v>
-                  <v n="ILValid">false</v>
-                  <l2 n="ILLines" />
-                  <v n="Comment">""</v>
-                  <v n="Title">""</v>
-                  <v n="Label">""</v>
-                  <v n="OutCommented">false</v>
-                  <l2 n="NetworkItems" />
-                  <l2 n="Connectors" />
-                  <v n="Id">9L</v>
                 </o>
               </l2>
               <v n="BranchCounter">0</v>
@@ -1644,19 +1635,6 @@ Descriptions of what each line does in the execution plane
                     </l2>
                     <l2 n="Connectors" />
                     <v n="Id">58L</v>
-                  </o>
-                  <o>
-                    <v n="ILActive">false</v>
-                    <v n="FBDValid">false</v>
-                    <v n="ILValid">false</v>
-                    <l2 n="ILLines" />
-                    <v n="Comment">""</v>
-                    <v n="Title">""</v>
-                    <v n="Label">""</v>
-                    <v n="OutCommented">false</v>
-                    <l2 n="NetworkItems" />
-                    <l2 n="Connectors" />
-                    <v n="Id">5L</v>
                   </o>
                 </l2>
                 <v n="BranchCounter">0</v>
