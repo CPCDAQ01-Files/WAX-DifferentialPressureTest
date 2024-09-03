@@ -3,14 +3,17 @@
   <PropertyGroup>
     <ProjectGuid>{03a7d136-4b11-434c-9dbd-9b37e6ec270e}</ProjectGuid>
     <AssemblyName>TwinCAT Measurement Project1</AssemblyName>
-    <Name>TwinCAT Measurement Project1</Name>
+    <Name>WG Timing Test</Name>
     <RootNamespace>TwinCAT Measurement Project1</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Analytics Project.tcAlyProj">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Referenced Scope Project.tcscopex">
+    <Content Include="Close to Open.tcscopex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Open to Close.tcscopex">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
