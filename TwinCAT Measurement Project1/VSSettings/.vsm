@@ -4,41 +4,17 @@
   <FileName></FileName>
   <Children>
     <Node>
-      <Title>Analytics Project.tcAlyProj</Title>
-      <Expanded>False</Expanded>
-      <FileName></FileName>
-      <Children />
-    </Node>
-    <Node>
-      <Title>Close to Open</Title>
-      <Expanded>False</Expanded>
-      <FileName>C:\Users\lkowsar\OneDrive - Columbia Basin Trust\Documents\TcXaeShell\WAX-DifferentialPressureTest\TwinCAT Measurement Project1\Close to Open.tcscopex</FileName>
+      <Title>Analytics Project</Title>
+      <Expanded>True</Expanded>
+      <FileName>C:\Users\labib\OneDrive\Documents\TcXaeShell\WAX U1 Differential Pressure test\TwinCAT Measurement Project1\Analytics Project.tcAlyProj</FileName>
       <Children>
         <Node>
-          <Title>DataPool</Title>
+          <Title>Network</Title>
           <Expanded>False</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
-              <Title>rOutoutPercentPosition</Title>
-              <Expanded>False</Expanded>
-              <FileName></FileName>
-              <Children />
-            </Node>
-            <Node>
-              <Title>rOutputPressure01</Title>
-              <Expanded>False</Expanded>
-              <FileName></FileName>
-              <Children />
-            </Node>
-            <Node>
-              <Title>rOutputPressure02</Title>
-              <Expanded>False</Expanded>
-              <FileName></FileName>
-              <Children />
-            </Node>
-            <Node>
-              <Title>TimeLine</Title>
+              <Title>Edge Counter 1Ch PT2</Title>
               <Expanded>False</Expanded>
               <FileName></FileName>
               <Children />
@@ -46,66 +22,72 @@
           </Children>
         </Node>
         <Node>
-          <Title>WG Timing Test Closed-&gt;Open</Title>
-          <Expanded>False</Expanded>
+          <Title>Network for PT2</Title>
+          <Expanded>True</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
-              <Title>%Position</Title>
+              <Title>Edge Counter 1Ch</Title>
               <Expanded>False</Expanded>
               <FileName></FileName>
-              <Children>
-                <Node>
-                  <Title>rOutoutPercentPosition</Title>
-                  <Expanded>False</Expanded>
-                  <FileName></FileName>
-                  <Children />
-                </Node>
-              </Children>
-            </Node>
-            <Node>
-              <Title>Opening Pressure</Title>
-              <Expanded>False</Expanded>
-              <FileName></FileName>
-              <Children>
-                <Node>
-                  <Title>rOutputPressure01</Title>
-                  <Expanded>False</Expanded>
-                  <FileName></FileName>
-                  <Children />
-                </Node>
-              </Children>
-            </Node>
-            <Node>
-              <Title>Closing Pressure</Title>
-              <Expanded>False</Expanded>
-              <FileName></FileName>
-              <Children>
-                <Node>
-                  <Title>rOutputPressure02</Title>
-                  <Expanded>False</Expanded>
-                  <FileName></FileName>
-                  <Children />
-                </Node>
-              </Children>
+              <Children />
             </Node>
           </Children>
         </Node>
         <Node>
-          <Title>Trigger</Title>
+          <Title>Dashboard</Title>
+          <Expanded>False</Expanded>
+          <FileName></FileName>
+          <Children />
+        </Node>
+        <Node>
+          <Title>Inputs</Title>
           <Expanded>False</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
-              <Title>Last Event @ Edge Counter 1Ch</Title>
+              <Title>Virtual Mappings</Title>
               <Expanded>False</Expanded>
               <FileName></FileName>
               <Children>
                 <Node>
-                  <Title>Channel Trigger Set</Title>
+                  <Title>Virtual Input Source</Title>
                   <Expanded>False</Expanded>
                   <FileName></FileName>
-                  <Children />
+                  <Children>
+                    <Node>
+                      <Title>rOutoutPercentPosition</Title>
+                      <Expanded>False</Expanded>
+                      <FileName></FileName>
+                      <Children />
+                    </Node>
+                  </Children>
+                </Node>
+              </Children>
+            </Node>
+            <Node>
+              <Title>Sources</Title>
+              <Expanded>False</Expanded>
+              <FileName></FileName>
+              <Children>
+                <Node>
+                  <Title>5.141.19.14.1.1: 851 [10.00ms]</Title>
+                  <Expanded>False</Expanded>
+                  <FileName></FileName>
+                  <Children>
+                    <Node>
+                      <Title>MAIN.rOutoutPercentPosition</Title>
+                      <Expanded>False</Expanded>
+                      <FileName></FileName>
+                      <Children />
+                    </Node>
+                    <Node>
+                      <Title>TimeLine</Title>
+                      <Expanded>False</Expanded>
+                      <FileName></FileName>
+                      <Children />
+                    </Node>
+                  </Children>
                 </Node>
               </Children>
             </Node>
@@ -115,12 +97,12 @@
     </Node>
     <Node>
       <Title>Open to Close</Title>
-      <Expanded>False</Expanded>
-      <FileName>C:\Users\lkowsar\OneDrive - Columbia Basin Trust\Documents\TcXaeShell\WAX-DifferentialPressureTest\TwinCAT Measurement Project1\Open to Close.tcscopex</FileName>
+      <Expanded>True</Expanded>
+      <FileName>C:\Users\labib\OneDrive\Documents\TcXaeShell\WAX U1 Differential Pressure test\TwinCAT Measurement Project1\Open to Close.tcscopex</FileName>
       <Children>
         <Node>
           <Title>DataPool</Title>
-          <Expanded>True</Expanded>
+          <Expanded>False</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
@@ -141,16 +123,10 @@
               <FileName></FileName>
               <Children />
             </Node>
-            <Node>
-              <Title>TimeLine</Title>
-              <Expanded>False</Expanded>
-              <FileName></FileName>
-              <Children />
-            </Node>
           </Children>
         </Node>
         <Node>
-          <Title>WG Timing Test Open-&gt;Closed</Title>
+          <Title>WG Timing Test Close-&gt;Open</Title>
           <Expanded>True</Expanded>
           <FileName></FileName>
           <Children>
@@ -196,8 +172,28 @@
           </Children>
         </Node>
         <Node>
-          <Title>Trigger</Title>
+          <Title>WG Timing Test Open-&gt;Close</Title>
           <Expanded>True</Expanded>
+          <FileName></FileName>
+          <Children>
+            <Node>
+              <Title>REAL32</Title>
+              <Expanded>True</Expanded>
+              <FileName></FileName>
+              <Children>
+                <Node>
+                  <Title>rOutoutPercentPosition (1)</Title>
+                  <Expanded>False</Expanded>
+                  <FileName></FileName>
+                  <Children />
+                </Node>
+              </Children>
+            </Node>
+          </Children>
+        </Node>
+        <Node>
+          <Title>Trigger</Title>
+          <Expanded>False</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
@@ -206,10 +202,37 @@
               <FileName></FileName>
               <Children>
                 <Node>
-                  <Title>Channel Trigger Set</Title>
-                  <Expanded>False</Expanded>
+                  <Title>Channel Trigger Set (1)</Title>
+                  <Expanded>True</Expanded>
                   <FileName></FileName>
-                  <Children />
+                  <Children>
+                    <Node>
+                      <Title>Trigger: Last Event @ Edge Counter 1Ch</Title>
+                      <Expanded>False</Expanded>
+                      <FileName></FileName>
+                      <Children />
+                    </Node>
+                  </Children>
+                </Node>
+              </Children>
+            </Node>
+            <Node>
+              <Title>Last Event @ Edge Counter 1Ch PT2</Title>
+              <Expanded>True</Expanded>
+              <FileName></FileName>
+              <Children>
+                <Node>
+                  <Title>Channel Trigger Set</Title>
+                  <Expanded>True</Expanded>
+                  <FileName></FileName>
+                  <Children>
+                    <Node>
+                      <Title>Trigger: Last Event @ Edge Counter 1Ch PT2</Title>
+                      <Expanded>False</Expanded>
+                      <FileName></FileName>
+                      <Children />
+                    </Node>
+                  </Children>
                 </Node>
               </Children>
             </Node>
