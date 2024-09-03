@@ -3,11 +3,14 @@
   <PropertyGroup>
     <ProjectGuid>{bec70f59-4b75-4f7f-9e02-cbf28620bd84}</ProjectGuid>
     <AssemblyName>WAX DifferentialPressureTest_Scope</AssemblyName>
-    <Name>WAX DifferentialPressureTest_Scope</Name>
+    <Name>WG Timing Test</Name>
     <RootNamespace>WAX DifferentialPressureTest_Scope</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="YT Scope Project.tcscopex">
+    <Content Include="Close to OPen.tcscopex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Open to Close.tcscopex">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

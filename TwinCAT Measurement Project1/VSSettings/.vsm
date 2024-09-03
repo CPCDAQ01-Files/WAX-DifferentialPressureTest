@@ -4,9 +4,15 @@
   <FileName></FileName>
   <Children>
     <Node>
-      <Title>Close to OPen</Title>
+      <Title>Analytics Project.tcAlyProj</Title>
       <Expanded>False</Expanded>
-      <FileName>C:\Users\lkowsar\OneDrive - Columbia Basin Trust\Documents\TcXaeShell\WAX-DifferentialPressureTest\WAX DifferentialPressureTest_Scope\Close to OPen.tcscopex</FileName>
+      <FileName></FileName>
+      <Children />
+    </Node>
+    <Node>
+      <Title>Close to Open</Title>
+      <Expanded>False</Expanded>
+      <FileName>C:\Users\lkowsar\OneDrive - Columbia Basin Trust\Documents\TcXaeShell\WAX-DifferentialPressureTest\TwinCAT Measurement Project1\Close to Open.tcscopex</FileName>
       <Children>
         <Node>
           <Title>DataPool</Title>
@@ -31,11 +37,17 @@
               <FileName></FileName>
               <Children />
             </Node>
+            <Node>
+              <Title>TimeLine</Title>
+              <Expanded>False</Expanded>
+              <FileName></FileName>
+              <Children />
+            </Node>
           </Children>
         </Node>
         <Node>
-          <Title>WG Timing Test Close-&gt;Open</Title>
-          <Expanded>True</Expanded>
+          <Title>WG Timing Test Closed-&gt;Open</Title>
+          <Expanded>False</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
@@ -52,7 +64,7 @@
               </Children>
             </Node>
             <Node>
-              <Title>PressureTrans01</Title>
+              <Title>Opening Pressure</Title>
               <Expanded>False</Expanded>
               <FileName></FileName>
               <Children>
@@ -65,7 +77,7 @@
               </Children>
             </Node>
             <Node>
-              <Title>PressureTrans02</Title>
+              <Title>Closing Pressure</Title>
               <Expanded>False</Expanded>
               <FileName></FileName>
               <Children>
@@ -83,18 +95,32 @@
           <Title>Trigger</Title>
           <Expanded>False</Expanded>
           <FileName></FileName>
-          <Children />
+          <Children>
+            <Node>
+              <Title>Last Event @ Edge Counter 1Ch</Title>
+              <Expanded>False</Expanded>
+              <FileName></FileName>
+              <Children>
+                <Node>
+                  <Title>Channel Trigger Set</Title>
+                  <Expanded>False</Expanded>
+                  <FileName></FileName>
+                  <Children />
+                </Node>
+              </Children>
+            </Node>
+          </Children>
         </Node>
       </Children>
     </Node>
     <Node>
       <Title>Open to Close</Title>
       <Expanded>False</Expanded>
-      <FileName>C:\Users\lkowsar\OneDrive - Columbia Basin Trust\Documents\TcXaeShell\WAX-DifferentialPressureTest\WAX DifferentialPressureTest_Scope\Open to Close.tcscopex</FileName>
+      <FileName>C:\Users\lkowsar\OneDrive - Columbia Basin Trust\Documents\TcXaeShell\WAX-DifferentialPressureTest\TwinCAT Measurement Project1\Open to Close.tcscopex</FileName>
       <Children>
         <Node>
           <Title>DataPool</Title>
-          <Expanded>True</Expanded>
+          <Expanded>False</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
@@ -115,16 +141,22 @@
               <FileName></FileName>
               <Children />
             </Node>
+            <Node>
+              <Title>TimeLine</Title>
+              <Expanded>False</Expanded>
+              <FileName></FileName>
+              <Children />
+            </Node>
           </Children>
         </Node>
         <Node>
-          <Title>WG Timing Test Open-&gt;Close</Title>
-          <Expanded>True</Expanded>
+          <Title>WG Timing Test Open-&gt;Closed</Title>
+          <Expanded>False</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
               <Title>%Position</Title>
-              <Expanded>True</Expanded>
+              <Expanded>False</Expanded>
               <FileName></FileName>
               <Children>
                 <Node>
@@ -136,8 +168,8 @@
               </Children>
             </Node>
             <Node>
-              <Title>PressureTrans01</Title>
-              <Expanded>True</Expanded>
+              <Title>Opening Pressure</Title>
+              <Expanded>False</Expanded>
               <FileName></FileName>
               <Children>
                 <Node>
@@ -149,8 +181,8 @@
               </Children>
             </Node>
             <Node>
-              <Title>PressureTrans02</Title>
-              <Expanded>True</Expanded>
+              <Title>Closing Pressure</Title>
+              <Expanded>False</Expanded>
               <FileName></FileName>
               <Children>
                 <Node>
@@ -167,7 +199,21 @@
           <Title>Trigger</Title>
           <Expanded>False</Expanded>
           <FileName></FileName>
-          <Children />
+          <Children>
+            <Node>
+              <Title>Last Event @ Edge Counter 1Ch</Title>
+              <Expanded>False</Expanded>
+              <FileName></FileName>
+              <Children>
+                <Node>
+                  <Title>Channel Trigger Set</Title>
+                  <Expanded>False</Expanded>
+                  <FileName></FileName>
+                  <Children />
+                </Node>
+              </Children>
+            </Node>
+          </Children>
         </Node>
       </Children>
     </Node>
