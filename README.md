@@ -1,4 +1,4 @@
-#Analytic Scope
+# Analytic Scope
 Advanced measurement tooling available with the analytics extension. Currently, is virtually identical to the simpleScope, except it has flags to trigger at 100% or 0.1%.
 
 Note: Use simpleScope for differential test if analyticScope is for any reason not working!
