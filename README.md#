@@ -1,4 +1,4 @@
-# Analytic Scope
-Meant to be an option to try the more advanced measurement tooling available with the analytics extension. Haven't implemented it yet, so it's a copy of master (to when it was first initialized). 
+#Analytic Scope
+Advanced measurement tooling available with the analytics extension. Currently, is virtually identical to the simpleScope, except it has flags to trigger at 100% or 0.1%.
 
-A feature that could be worthwhile to add is trigger flags that would graphically show when %position reaches 100% or when the pressure transducers get to 1100 PSIG.
+Note: Use simpleScope for differential test if analyticScope is for any reason not working!
